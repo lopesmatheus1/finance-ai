@@ -31,7 +31,6 @@ const TimeSelect = () => {
   const handleMonthChange = (month: string) => {
     push(`/?month=${month}`);
   };
-
   return (
     <Select
       onValueChange={(value) => handleMonthChange(value)}
@@ -42,8 +41,8 @@ const TimeSelect = () => {
       </SelectTrigger>
       <SelectContent>
         {MONTH_OPTIONS.map((option) => (
-          <SelectItem value={option.value} key={option.value}>
-            <div>{option.label}</div>
+          <SelectItem key={option.value} value={option.value}>
+            {option.label}
           </SelectItem>
         ))}
       </SelectContent>
