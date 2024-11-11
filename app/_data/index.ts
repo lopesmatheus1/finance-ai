@@ -98,5 +98,6 @@ export const getDashboard = async (month: string) => {
     expensesTotal,
     typesPercentage,
     totalExpensePerCategory,
+    lastTransactions,
   };
 };
