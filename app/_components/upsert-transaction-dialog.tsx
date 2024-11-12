@@ -100,7 +100,7 @@ const UpsertTransactionDialog = ({
     }
   };
 
-  const isUpdate = Boolean(transactionId);
+
   
   return (
     <Dialog
