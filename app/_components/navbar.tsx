@@ -28,7 +28,7 @@ const Navbar = () => {
               : "text-muted-foreground"
           }
         >
-          Transactions
+          Transações
         </Link>
         <Link
           href="/subscription"
