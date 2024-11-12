@@ -47,6 +47,7 @@ const LastTransactions = ({ lastTransacitons }: LastTransactionsProps) => {
             <div className="flex items-center gap-3">
               <div className="rounded-xl bg-white bg-opacity-[3%] p-3">
                 <Image
+                  key={transaction.id}
                   src={
                     TRANSACTION_PAYMENT_METHOD_ICONS[transaction.paymentMethod]
                   }
