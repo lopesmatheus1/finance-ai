@@ -5,7 +5,13 @@ import { Button } from "./ui/button";
 import { useState } from "react";
 import UpsertTransactionDialog from "./upsert-transaction-dialog";
 
-const AddTransactionButton = () => {
+interface AddTransactionButtonProps {
+  userCanAddTransaction?: boolean;
+}
+
+const AddTransactionButton = ({
+  userCanAddTransaction,
+}: AddTransactionButtonProps) => {
   const [dialogIsOpen, setDialogIsOpen] = useState(false);
 
   return (
@@ -13,6 +19,7 @@ const AddTransactionButton = () => {
       <Button
         className="rounded-full font-bold"
         onClick={() => setDialogIsOpen(true)}
+        disabled={!userCanAddTransaction}
       >
         Adicionar transação
         <ArrowDownUpIcon />
