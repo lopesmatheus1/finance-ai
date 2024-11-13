@@ -4,7 +4,6 @@ import { TotalExpensePerCategory, TransactionPercentagePerType } from "./types";
 import { auth } from "@clerk/nextjs/server";
 
 export const getDashboard = async (month: string) => {
-  
   const { userId } = await auth();
 
   if (!userId) {
@@ -99,6 +98,6 @@ export const getDashboard = async (month: string) => {
     expensesTotal,
     typesPercentage,
     totalExpensePerCategory,
-    lastTransactions,
+    lastTransactions: JSON.parse(JSON.stringify(lastTransactions)),
   };
 };
