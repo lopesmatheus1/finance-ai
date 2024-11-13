@@ -58,6 +58,7 @@ const TransactionPieChart = ({
       fill: "#fff",
     },
   ];
+  
   return (
     <Card className="flex flex-col p-6">
       <CardContent className="flex-1 pb-0">
