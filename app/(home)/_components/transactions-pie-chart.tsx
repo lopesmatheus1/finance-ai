@@ -19,11 +19,11 @@ const chartConfig = {
     color: "#fff",
   },
   [TransactionType.DEPOSIT]: {
-    label: "Investido",
+    label: "Ganhos",
     color: "#55B02E",
   },
   [TransactionType.EXPENSE]: {
-    label: "Investido",
+    label: "Despesa",
     color: "#E93030",
   },
 } satisfies ChartConfig;
